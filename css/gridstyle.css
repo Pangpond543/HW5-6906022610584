@@ -1,0 +1,96 @@
+.grid {
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    grid-template-rows: 200px 80px auto auto 100px;
+    grid-template-areas: 
+        'header header'
+        'nav nav'
+        'leftbar main'
+        'leftbar2 main'
+        'footer footer';
+    gap: 10px;
+}
+
+.HF {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imgcon {
+    width: 300px;
+    height: auto;
+}
+
+header {
+    grid-area: header;
+    background-color: yellow;
+}
+
+nav {
+    grid-area: nav;
+    background-color: antiquewhite;
+    
+}
+
+section {
+    grid-area: leftbar;
+    background-color: aquamarine;
+}
+
+article {
+    grid-area: leftbar2;
+    background-color: aquamarine;
+}
+
+.content {
+    padding: 10px;
+}
+
+aside {
+    grid-area: main;
+    background-color: aliceblue;
+    padding: 15px;
+}
+
+aside label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="number"], input[type="password"] {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 5px;
+}
+
+aside .choice-group {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+aside .choice-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+aside .choice-item label {
+    display: inline;
+    margin: 0;
+    font-weight: normal;
+}
+
+aside input[type="checkbox"] {
+    display: inline;
+}
+
+
+
+footer {
+    grid-area: footer;
+    width: 100%;
+}
