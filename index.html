@@ -12,8 +12,8 @@
                 <img class="HF" src="images/header.jpg" alt="" >
             </header>
             <nav>
-                <a href="index.html">Home</a>
-                <a href="product.html">Product</a>
+                <a href="index.html"><h2>Home</h2></a>
+                <a href="product.html"><h2>Product</h2></a>
             </nav>
             <section>
                 <div class="content">
@@ -32,69 +32,78 @@
             </article>
             <aside>
                 <div>
-                    <h2>สมัครสมาชิก</h2>
-                    <label for="">ชื่อ</label>
-                    <input type="text">
-                    <br>
-                    <label for="">นามสกุล</label>
-                    <input type="text">
-                    <br>
-                    <label for="">email</label>
-                    <input type="email">
-                    <br>
-                    <label for="">รหัสผ่าน</label>
-                    <input type="password">
-                    <br>
-                    <label for="">ยืนยันรหัสผ่าน</label>
-                    <input type="password">
-                    <br>
-                    <label for="">เบอร์มือถือ</label>
-                    <input type="number">
-                    <br>
-                    <h3>เพศ</h3>
-                    <div class="choice-group">
-                        <div class="choice-item">
-                            <input type="radio" name="เพศ" id="ชาย">
-                            <label for="ชาย">ชาย</label>
+                    <form action="">
+                        <h2>สมัครสมาชิก</h2>
+                        <label for="">ชื่อ</label>
+                        <input type="text" placeholder="ชื่อจริง" required>
+                        <br>
+                        <label for="">นามสกุล</label>
+                        <input type="text" placeholder="นามสกุล" required>
+                        <br>
+                        <label for="">email</label>
+                        <input type="email" placeholder="example@domain.com" required>
+                        <br>
+                        <label for="">รหัสผ่าน</label>
+                        <input type="password" placeholder="อย่างน้อย 8 ตัวอักษร" required>
+                        <br>
+                        <label for="">ยืนยันรหัสผ่าน</label>
+                        <input type="password" placeholder="ยืนยันรหัสผ่าน" required>
+                        <br>
+                        <label for="">เบอร์มือถือ</label>
+                        <input type="tel" placeholder="099-xxx-xxxxx" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                        <br>
+                        <h3>เพศ</h3>
+                        <div class="choice-group">
+                            <div class="choice-item">
+                                <input type="radio" name="เพศ" id="ชาย" required>
+                                <label for="ชาย">ชาย</label>
+                            </div>
+                            <div class="choice-item">
+                                <input type="radio" name="เพศ" id="หญิง" required>
+                                <label for="หญิง">หญิง</label>
+                            </div>
+                            <div class="choice-item">
+                                <input type="radio" name="เพศ" id="ไม่ระบุ" required>
+                                <label for="ไม่ระบุ">ไม่ระบุ</label>
+                            </div>
                         </div>
-                        <div class="choice-item">
-                            <input type="radio" name="เพศ" id="หญิง">
-                            <label for="หญิง">หญิง</label>
+                        
+                        <br>
+                        <div class="choice-group">
+                            <div class="choice-item">
+                                <input type="checkbox" id="news">
+                                <label for="news">รับข่าวสาร</label>
+                            </div>
+                            <div class="choice-item">
+                                <input type="checkbox" id="promo">
+                                <label for="promo">โปรโมรชั่น</label>
+                            </div>
+                            <div class="choice-item">
+                                <input type="checkbox" id="event">
+                                <label for="event">กิจกรรม</label>
+                            </div>
                         </div>
-                        <div class="choice-item">
-                            <input type="radio" name="เพศ" id="ไม่ระบุ">
-                            <label for="ไม่ระบุ">ไม่ระบุ</label>
-                        </div>
-                    </div>
-                    
-                    <br>
-                    <div class="choice-group">
-                        <div class="choice-item">
-                            <input type="checkbox" id="news">
-                            <label for="news">รับข่าวสาร</label>
-                        </div>
-                        <div class="choice-item">
-                            <input type="checkbox" id="promo">
-                            <label for="promo">โปรโมรชั่น</label>
-                        </div>
-                        <div class="choice-item">
-                            <input type="checkbox" id="event">
-                            <label for="event">กิจกรรม</label>
-                        </div>
-                    </div>
 
-                    <h3>ประเภทสมาชิก</h3>
-                    <select name="" id="">
-                        <option value="0">ธรรมดา</option>
-                        <option value="1">ปลานกลาง</option>
-                        <option value="2">พรีเมี่ยม</option>
-                        <option value="3">เทพ</option>
-                    </select>
-                    <br>
-                    <div class="choice-item">
-                        <input type="checkbox" id="terms">
-                        <label for="">ยอมรับข้อกำหนดและเงื่อนไข</label>
-                    </div>
+                        <h3>ประเภทสมาชิก</h3>
+                        <select name="" id="">
+                            <option value="0">ธรรมดา</option>
+                            <option value="1">ปลานกลาง</option>
+                            <option value="2">พรีเมี่ยม</option>
+                            <option value="3">เทพ</option>
+                        </select>
+                        <br>
+                        <div class="choice-item">
+                            <input type="checkbox" id="terms" required>
+                            <label for="">ยอมรับข้อกำหนดและเงื่อนไข</label>
+                        </div>
+
+                        <div>
+                            <input class="btn" type="submit" value="Submit">
+                        </div>
+
+                        <h4>เราจะเก็บข้อมูลของคุณเป็นความลับ</h4>
+                        
+                    </form>
                     
                 </div>
             </aside>

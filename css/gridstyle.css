@@ -1,7 +1,7 @@
 .grid {
     display: grid;
     grid-template-columns: 4fr 2fr;
-    grid-template-rows: 200px 80px auto auto 100px;
+    grid-template-rows: 100px 80px auto auto 100px;
     grid-template-areas: 
         'header header'
         'nav nav'
@@ -17,6 +17,14 @@
     object-fit: cover;
 }
 
+h2 {
+    margin-bottom: 3px;
+}
+
+aside h3 {
+    margin: 5px;
+}
+
 .imgcon {
     width: 300px;
     height: auto;
@@ -29,18 +37,31 @@ header {
 
 nav {
     grid-area: nav;
-    background-color: antiquewhite;
-    
+    background-color: rgb(101, 183, 255);
+    border-radius: 4px;
 }
+
+nav a {
+    display: inline-block;
+    margin-right: 30px ;
+    margin-top: 4px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: rgb(90, 90, 90);
+
+}
+
 
 section {
     grid-area: leftbar;
-    background-color: aquamarine;
+    background-color: rgb(101, 183, 255);
+    border-radius: 4px;
 }
 
 article {
     grid-area: leftbar2;
-    background-color: aquamarine;
+    background-color: rgb(101, 183, 255);
+    border-radius: 4px;
 }
 
 .content {
@@ -49,8 +70,9 @@ article {
 
 aside {
     grid-area: main;
-    background-color: aliceblue;
+    background-color: rgb(164, 210, 250);
     padding: 15px;
+    border-radius: 4px;
 }
 
 aside label {
@@ -58,7 +80,7 @@ aside label {
     margin-top: 10px;
 }
 
-input[type="text"], input[type="email"], input[type="number"], input[type="password"] {
+input[type="text"], input[type="email"], input[type="number"], input[type="password"], input[type="tel"] {
     width: 100%;
     padding: 7px;
     border: 1px solid rgb(206, 206, 206);
@@ -88,7 +110,27 @@ aside input[type="checkbox"] {
     display: inline;
 }
 
+.btn {
+    margin-top: 10px;
+    background-color: aqua;
+    padding: 10px 100px;
+    border-radius: 5px;
+    cursor: pointer;
 
+}
+
+select {
+    margin-bottom: 25px;
+    padding: 5px 30px;
+    border-radius: 5px;
+}
+
+h4 {
+    margin-top: 7px;
+    color: rgb(104, 104, 104);
+    font-weight: 100;
+    font-size: 13px;
+}
 
 footer {
     grid-area: footer;
